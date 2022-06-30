@@ -16,6 +16,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [GraphQL](https://graphql.org/)
 - [Tailwindcss](https://tailwindcss.com/)
 - [date-fns](https://date-fns.org/)
+- [Phosphor Icons](https://phosphoricons.com/)
 
 ## 💻 Projeto
 
@@ -33,3 +34,4 @@ professores e usuários cadastradas.
 - GraphQL: linguagem de consulta e ambiente de execução voltada a servidores para as interfaces de programação de aplicações 
   (APIs) cuja prioridade é fornecer exatamente os dados que os clientes solicitam e nada além. Foi usado para a escolha dos dados que aparecem na aplicação.
 - date-fns: biblioteca javascript para datas, utilizado para mostrar as datas das aulas formatado pelo dia da semana, dia do mês, mês e hora em português.
+- Phosphor Icons: é uma família de ícones flexível para interfaces, diagramas, apresentações.
