@@ -1,7 +1,8 @@
-import { gql, useMutation } from "@apollo/client";
 import { useState, FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
+import { Footer } from "../components/Footer";
 import Logo from "../components/Logo";
+import things from "../assets/things.png";
 import { useCreateSubscriberMutation } from "../graphql/generated";
 
 export default function Subscribe() {
@@ -26,7 +27,7 @@ export default function Subscribe() {
 
     return (
         <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
-            <div className="w-full max-w-[1216px] flex items-center justify-between mt-20 mx-auto">
+            <div className="w-full max-w-[1216px] flex items-center justify-between mt-20 mx-auto ">
                 <div className="max-w-[640px]">
                     <Logo/>
                     <h1 className="mt-8 text-[2.5rem] leading-tight">
@@ -62,7 +63,9 @@ export default function Subscribe() {
                     </form>
                 </div>
             </div>
-            <img src="/src/assets/things.png" alt="" className="mt-10"/>
+            <img src={things} alt="" className="mt-10"/>
+            < Footer />
         </div>
+        
     )
 }

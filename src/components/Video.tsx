@@ -2,22 +2,24 @@ import { DefaultUi, Player, Youtube } from "@vime/react";
 import { CaretRight, DiscordLogo, FileArrowDown, Lightning } from "phosphor-react";
 import '@vime/core/themes/default.css';
 import { useGetLessonBySlugQuery } from "../graphql/generated";
+import { Footer } from "./Footer";
 
 interface VideoProps{
   lessonSlug: string
 }
 
-export default function Video(props: VideoProps) {
+export function Video(props: VideoProps) {
     const { data } = useGetLessonBySlugQuery({
       variables:{
         slug: props.lessonSlug
       }
+      
     })
 
     if (!data || !data.lesson ) {
       return (
-        <div className="flex-1">
-          <h1>Carregando... </h1>
+        <div className="flex-1 flex justify-center items-center">
+          <p className="text3xl">Carregando... </p>
         </div>
       
       )
@@ -61,13 +63,13 @@ export default function Video(props: VideoProps) {
             </div>
 
             <div className="grid gap-4">
-              <a href="" 
+              <a href="#" 
                 className="p-4 text-sm flex items-center bg-green-500 rounded font-bold uppercase gap-2 hover:bg-green-700 transition-colors"
               >
                 <DiscordLogo size={24}/>
                 Comunidade Discord
               </a>
-              <a href="" 
+              <a href="#" 
                 className="p-4 text-sm flex items-center border border-blue-500 text-blue-500 rounded font-bold uppercase gap-2 hover:bg-blue-500 hover:text-gray-900 transition-colors"
               >
                 <Lightning size={24}/>
@@ -77,7 +79,7 @@ export default function Video(props: VideoProps) {
           </div>
 
           <div className="grid grid-cols-2 gap-8 mt-20">
-            <a href="" 
+            <a href="#" 
               className="bg-gray-700 rounded overflow-hidden flex flex-stretch hover:bg-gray-600 transition-colors">
               <div className="bg-green-700 p-6 flex items-center">
                 <FileArrowDown size={40}/>
@@ -96,7 +98,7 @@ export default function Video(props: VideoProps) {
               </div>             
             </a>
 
-            <a href="" 
+            <a href="#" 
               className="bg-gray-700 rounded overflow-hidden flex flex-stretch hover:bg-gray-600 transition-colors">
               <div className="bg-green-700 p-6 flex items-center">
                 <FileArrowDown size={40}/>
@@ -114,9 +116,9 @@ export default function Video(props: VideoProps) {
                 <CaretRight size={24}/>
               </div>             
             </a>
-
           </div>
         </div>
+        <Footer />   
       </div>
     )
   }
