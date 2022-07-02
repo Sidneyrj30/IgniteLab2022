@@ -3,7 +3,8 @@
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-sobre-as-tecnologias">Sobre as tecnologias</a>
+  <a href="#-sobre-as-tecnologias">Sobre as tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#funcionalidades-adicionais">Funcionalidades adicionais</a>
 </p>
 
 ## ✨ Tecnologias
@@ -35,3 +36,14 @@ professores e usuários cadastradas.
   (APIs) cuja prioridade é fornecer exatamente os dados que os clientes solicitam e nada além. Foi usado para a escolha dos dados que aparecem na aplicação.
 - date-fns: biblioteca javascript para datas, utilizado para mostrar as datas das aulas formatado pelo dia da semana, dia do mês, mês e hora em português.
 - Phosphor Icons: é uma família de ícones flexível para interfaces, diagramas, apresentações.
+
+## Funcionalidades adicionais
+
+<h3>Atenção: Essa aplicação foi feita junto com o instrutor da Rocketseat mas essas adições foram feitas apenas por mim</h3>
+
+- Acrescimo de uma imagem na tela de inscrição, pois da forma antiga com erro.
+- Acrescimo do footer que não existia.
+- Correção do posicionamento da informação do carregamento enquanto os videos ainda não aparecem.
+- Frase de boas vindas para as pessoas que entraram na página de videos mas ainda não selecionaram nenhum.
+- Correção dos links que não precisa de interação para retornar para mesma página 
+
